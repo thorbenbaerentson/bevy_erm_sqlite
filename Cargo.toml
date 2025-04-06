@@ -1,7 +1,9 @@
 [package]
-name = "bevy_lib_template"
+name = "bevy_erm_sqlite"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = { version = "*", default-features = false, features = ["dynamic_linking"] }
+bevy = { version = "*", default-features = true }
+bevy_erm = { path = "../bevy_erm" }
+rusqlite = { version = "0.34.0", features = ["bundled"] }
